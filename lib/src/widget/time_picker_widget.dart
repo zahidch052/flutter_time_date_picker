@@ -56,7 +56,7 @@ class _TimePickerWidgetState extends State<TimePickerWidget> {
       maxTime ??= DateTime.parse(DATE_PICKER_MAX_DATETIME);
 
       // init time is now
-      initTime = DateTime.now();
+      initTime ??= initTime;
     
     _minTime = minTime;
     _maxTime = maxTime;

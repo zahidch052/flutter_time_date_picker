@@ -15,7 +15,7 @@ class TimePickerInPage extends StatefulWidget {
 const String MIN_DATETIME = '2010-05-12 05:15:20';
 const String MAX_DATETIME = '2021-11-25 22:45:10';
 const String INIT_DATETIME = '2019-05-17 18:13:15';
-const String DATE_FORMAT = 'HH时:mm分:s';
+const String DATE_FORMAT = 'HH:mm:s';
 
 class _TimePickerInPageState extends State<TimePickerInPage> {
   DateTime _dateTime;
@@ -104,7 +104,7 @@ class _TimePickerInPageState extends State<TimePickerInPage> {
                 maxDateTime: DateTime.parse(MAX_DATETIME),
                 initDateTime: DateTime.parse(INIT_DATETIME),
                 dateFormat: DATE_FORMAT,
-                minuteDivider: 15,
+                minuteDivider: 1,
                 pickerTheme: const DateTimePickerTheme(
                     showTitle: false, backgroundColor: Color(0xFFe1bee7)),
                 onChange: (dateTime, selectedIndex) {
